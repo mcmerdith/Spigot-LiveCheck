@@ -1,0 +1,21 @@
+name: LiveCheck
+version: 1.0
+main: net.mcmerdith.livecheck.Main
+api-version: 1.16
+
+permissions:
+  livecheck.admin:
+    default: op
+    description: Admins
+  livecheck.user:
+    default: true
+    description: All users
+commands:
+  livechecklink:
+    permission: livecheck.user
+    description: Link your twitch username. The MC Username parameter will be ignored unless you're an admin
+    usage: /livechecklink <twitch username> [mc username]
+  livecheckconfig:
+    permission: livecheck.admin
+    description: Modify plugin configuration
+    usage: /livecheckconfig <field> <value>

@@ -1,0 +1,36 @@
+# LiveCheck
+# Enforce Twitch Streaming on a Spigot Server
+
+# Developed by mcmerdith (https://mcmerdith.net/development/spigot)
+# Developed for BenMitchell#3746
+# February 5, 2021
+
+####################### IMPORTANT NOTE #######################
+#                                                            #
+#    The plugin is enabled by default when initialized       #
+#                                                            #
+#    The plugin can be temporarily disabled using through    #
+#    /livecheckconfig ENABLED <true|false>                   #
+#                                                            #
+##############################################################
+
+# Global Plugin Preferences
+preferences:
+  # API URL to fetch Twitch data
+  api_url: "https://api.filepipe.io/test/twitch.php?name="
+  # Whether or not Admins should be kicked for being offline
+  kick_op: false
+  # Whether or not regular Users can change other users Twitch registration
+  non_op_link_other_players: false
+  # Kick players for having too small of a viewership
+  minimum_viewers:
+    # Whether or not the check should run
+    enabled: false
+    # Threshold to kick players. Viewership < Threshold = Kick
+    threshold: 250
+# Global User Messages
+messages:
+  # Message displayed when a player is frozen for not having a linked Twitch
+  no_twitch: Please link your twitch. Use /livechecklink <your Twitch username>
+  # Kick Message shown to user when they're kicked for being offline
+  offline: You must be streaming to play
