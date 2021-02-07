@@ -1,10 +1,10 @@
 # LiveCheck
 # Enforce Twitch Streaming on a Spigot Server
-
+#
 # Developed by mcmerdith (https://mcmerdith.net/development/spigot)
 # Developed for BenMitchell#3746
 # February 5, 2021
-
+#
 ####################### IMPORTANT NOTE #######################
 #                                                            #
 #    The plugin is enabled by default when initialized       #
@@ -13,8 +13,10 @@
 #    /livecheckconfig ENABLED <true|false>                   #
 #                                                            #
 ##############################################################
-
+#
+# Documentation: https://github.com/mcmerdith/Spigot-LiveCheck/wiki
 # Global Plugin Preferences
+
 preferences:
   # API URL to fetch Twitch data
   api_url: "https://api.filepipe.io/test/twitch.php?name="
